@@ -8,6 +8,7 @@ var messages = 'Helo';
 app.get('/', (req, res) => {
   let file = fs.readFileSync('./messages.txt');
   res.send(file);
+  res.send(messages);
   res.end();
 });
 
