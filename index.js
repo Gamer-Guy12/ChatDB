@@ -3,8 +3,6 @@ const app = express();
 const port = 3010;
 const fs = require('fs');
 
-var messages = 'Helo';
-
 app.get('/', (req, res) => {
   let file = fs.readFileSync('./messages.txt');
   res.send(file);
